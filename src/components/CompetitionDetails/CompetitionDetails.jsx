@@ -24,7 +24,7 @@ function CompetitionDetails({ competitionName, detailedPara, registrationFee = "
                 <p className="text-center text-2xl md:text-4xl font-black text-neutral-50 underline underline-offset-8">
                     Details
                 </p>
-                <div className='flex flex-row justify-center gap-4 mt-10'>
+                <div className='flex flex-wrap justify-center gap-4 mt-10'>
                     <Card title={"Registration Fee"} amount={registrationFee} />
                     <Card title={"Max Members Allowed"} amount={maxMembers} />
                     <Card title={"People Registered"} amount={"100+"} />
