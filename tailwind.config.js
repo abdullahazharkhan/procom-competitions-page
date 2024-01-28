@@ -7,6 +7,16 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const extendUnderline = {
+        '.underline': {
+          'textDecoration': 'underline',
+          'text-decoration-color': '#107fb7',
+        },
+      }
+      addUtilities(extendUnderline)
+    }
+  ],
 }
 
