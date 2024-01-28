@@ -3,7 +3,7 @@ import Timer from '../Timer/Timer'
 
 function Header() {
   return (
-    <div className="md:sticky md:top-0">
+    <div className="">
       <Timer />
       <nav className='bg-slate-950 w-full flex items-center justify-center'>
         <div className='cursor-pointer'>

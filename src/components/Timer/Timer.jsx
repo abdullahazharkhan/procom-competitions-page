@@ -59,8 +59,7 @@ const Timer = () => {
 
 const CountdownItem = ({ num, text }) => {
   return (
-    // height daalni
-    <div className="font-mono flex items-center justify-center px-2 cursor-default">
+    <div className="font-mono flex items-center justify-center md:px-2 cursor-default">
       <div className="text-center overflow-hidden">
         <AnimatePresence mode="popLayout">
           <motion.span

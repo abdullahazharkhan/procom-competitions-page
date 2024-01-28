@@ -19,17 +19,17 @@ const CompetitionCard = () => {
                     href="app-development"
                     Icon={FaAndroid}
                 />
-                <Card 
-                    title="Blockchain" 
-                    subtitle="Block by Block" 
-                    href="blockchain" 
-                    Icon={SiHiveBlockchain} 
+                <Card
+                    title="Blockchain"
+                    subtitle="Block by Block"
+                    href="blockchain"
+                    Icon={SiHiveBlockchain}
                 />
-                <Card 
-                    title="CAD War" 
-                    subtitle="Design Wars" 
-                    href="cad-war" 
-                    Icon={MdEngineering} 
+                <Card
+                    title="CAD War"
+                    subtitle="Design Wars"
+                    href="cad-war"
+                    Icon={MdEngineering}
                 />
                 <Card
                     title="Artificial Intelligence"
@@ -73,17 +73,17 @@ const CompetitionCard = () => {
                     href="app-development"
                     Icon={FaAndroid}
                 />
-                <Card 
-                    title="Blockchain" 
-                    subtitle="Block by Block" 
-                    href="blockchain" 
-                    Icon={SiHiveBlockchain} 
+                <Card
+                    title="Blockchain"
+                    subtitle="Block by Block"
+                    href="blockchain"
+                    Icon={SiHiveBlockchain}
                 />
-                <Card 
-                    title="CAD War" 
-                    subtitle="Design Wars" 
-                    href="cad-war" 
-                    Icon={MdEngineering} 
+                <Card
+                    title="CAD War"
+                    subtitle="Design Wars"
+                    href="cad-war"
+                    Icon={MdEngineering}
                 />
                 <Card
                     title="Artificial Intelligence"
@@ -121,7 +121,7 @@ const CompetitionCard = () => {
                     href="free-hand-sketch"
                     Icon={RiSketching}
                 />
-                
+
             </div>
         </div>
     );
@@ -129,7 +129,7 @@ const CompetitionCard = () => {
 
 const Card = ({ title, subtitle, Icon, href }) => {
     return (
-        <Link
+        <a
             href={href}
             className="w-full p-4 rounded border-[1px] border-gray-800 relative overflow-hidden group bg-gray-800"
         >
@@ -143,7 +143,7 @@ const Card = ({ title, subtitle, Icon, href }) => {
             <p className="text-slate-400 group-hover:text-violet-200 relative z-10 duration-300">
                 {subtitle}
             </p>
-        </Link>
+        </a>
     );
 };
 
