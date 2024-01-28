@@ -129,8 +129,8 @@ const CompetitionCard = () => {
 
 const Card = ({ title, subtitle, Icon, href }) => {
     return (
-        <a
-            href={href}
+        <Link
+            to={href}
             className="w-full p-4 rounded border-[1px] border-gray-800 relative overflow-hidden group bg-gray-800"
         >
             <div className="absolute inset-0 bg-gradient-to-r from-[#107fb7] to-[#8a15e7] translate-y-[100%] group-hover:translate-y-[0%] transition-transform duration-300" />
@@ -143,7 +143,7 @@ const Card = ({ title, subtitle, Icon, href }) => {
             <p className="text-slate-400 group-hover:text-violet-200 relative z-10 duration-300">
                 {subtitle}
             </p>
-        </a>
+        </Link>
     );
 };
 

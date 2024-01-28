@@ -14,7 +14,6 @@ function CompetitionDetails({ competitionName, detailedPara, registrationFee = "
                 </p>
                 <br />
                 <p className="text-center text-neutral-400 font-bold">
-                    {/* In the dynamic realm of app development, creativity and innovation intersect to shape the digital landscape. Our app development competition is not just a showcase of technical prowess but a celebration of ingenuity and problem-solving. Participants are challenged to push the boundaries of possibility, transforming ideas into sleek, functional applications that address real-world needs. */}
                     {detailedPara}
                 </p>
                 <NeuButton text={"Register Now"} />
