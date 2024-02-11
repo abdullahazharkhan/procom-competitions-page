@@ -49,12 +49,12 @@ function CompetitionDetails({ competitionName, detailedPara, registrationFee = "
 
 const Card = ({ title, amount }) => {
     return (
-        <div class="flex flex-col w-1/6 bg-white border border-t-4 border-[#107fb7] shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:border-[#107fb7] dark:shadow-slate-700/[.7]">
-            <div class="p-4 md:p-5">
-                <h3 class="text-4xl font-mono font-bold text-gray-800 dark:text-white">
+        <div className="flex flex-col w-1/6 bg-white border border-t-4 border-[#107fb7] shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:border-[#107fb7] dark:shadow-slate-700/[.7]">
+            <div className="p-4 md:p-5">
+                <h3 className="text-4xl font-mono font-bold text-gray-800 dark:text-white">
                     {amount}
                 </h3>
-                <p class="mt-2 text-gray-500 dark:text-gray-400">
+                <p className="mt-2 text-gray-500 dark:text-gray-400">
                     {title}
                 </p>
             </div>
@@ -68,10 +68,10 @@ const PrizeCard = ({ winAmount, runnerUpAmount }) => {
             <div className="flex flex-col w-1/6 bg-white border border-t-4 border-[#ffe02f] shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:border-[#ffe02f] dark:shadow-slate-700/[.7]">
                 <div className="p-4 md:p-5 flex flex-col ">
                     <img src="https://i.gifer.com/6x6G.gif" alt="" className='rounded-xl mx-auto' />
-                    <h3 class="text-4xl text-center font-mono font-bold text-gray-800 dark:text-white">
+                    <h3 className="text-4xl text-center font-mono font-bold text-gray-800 dark:text-white">
                         Rs. {winAmount}
                     </h3>
-                    <p class="text-center font-bold tex-2xl text-gray-500 dark:text-gray-400">
+                    <p className="text-center font-bold tex-2xl text-gray-500 dark:text-gray-400">
                         Winner
                     </p>
                 </div>
@@ -80,10 +80,10 @@ const PrizeCard = ({ winAmount, runnerUpAmount }) => {
             <div className="flex flex-col w-1/6 bg-white border border-t-4 border-slate-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:border-slate-500 dark:shadow-slate-700/[.7]">
                 <div className="p-4 md:p-5 flex flex-col grayscale">
                     <img src="https://i.gifer.com/6x6G.gif" alt="" className='rounded-xl mx-auto' />
-                    <h3 class="text-4xl text-center font-mono font-bold text-gray-800 dark:text-white">
+                    <h3 className="text-4xl text-center font-mono font-bold text-gray-800 dark:text-white">
                         Rs. {runnerUpAmount}
                     </h3>
-                    <p class="text-center font-bold tex-2xl text-gray-500 dark:text-gray-400">
+                    <p className="text-center font-bold tex-2xl text-gray-500 dark:text-gray-400">
                         Runner Up
                     </p>
                 </div>

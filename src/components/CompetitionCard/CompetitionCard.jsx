@@ -129,21 +129,19 @@ const CompetitionCard = () => {
 
 const Card = ({ title, subtitle, Icon, href }) => {
     return (
-        <Link
-            to={href}
-            className="w-full p-4 rounded border-[1px] border-gray-800 relative overflow-hidden group bg-gray-800"
-        >
-            <div className="absolute inset-0 bg-gradient-to-r from-[#107fb7] to-[#8a15e7] translate-y-[100%] group-hover:translate-y-[0%] transition-transform duration-300" />
-
-            <Icon className="absolute z-10 -top-12 -right-12 text-9xl text-slate-700 group-hover:text-violet-400 group-hover:rotate-12 transition-transform duration-300" />
-            <Icon className="mb-2 text-2xl text-violet-100 group-hover:text-white transition-colors relative z-10 duration-300" />
-            <h3 className="font-medium text-lg text-white group-hover:text-white relative z-10 duration-300">
-                {title}
-            </h3>
-            <p className="text-slate-400 group-hover:text-violet-200 relative z-10 duration-300">
-                {subtitle}
-            </p>
-        </Link>
+        <div className="bg-[url('/bg-img.JPG')] bg-center bg-no-repeat w-full p-4 rounded border-[1px] border-gray-800 relative overflow-hidden group bg-gray-800">
+            <Link to={href}>
+                <div className="absolute inset-0 bg-gradient-to-r from-[#107fb7] to-[#8a15e7] translate-y-[100%] group-hover:translate-y-[0%] transition-transform duration-300" />
+                <Icon className="absolute z-10 -top-12 -right-12 text-9xl text-slate-700 group-hover:text-violet-400 group-hover:rotate-12 transition-transform duration-300" />
+                <Icon className="mb-2 text-2xl text-violet-100 group-hover:text-white transition-colors relative z-10 duration-300" />
+                <h3 className="font-medium text-lg text-white group-hover:text-white relative z-10 duration-300">
+                    {title}
+                </h3>
+                <p className="text-slate-400 group-hover:text-violet-200 relative z-10 duration-300">
+                    {subtitle}
+                </p>
+            </Link>
+        </div>
     );
 };
 
